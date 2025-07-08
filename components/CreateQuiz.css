@@ -1,0 +1,189 @@
+/* src/CreateQuiz.css */
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #4A148C;
+}
+.quiz-code{
+    color: #4A148C;
+}
+.input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.button, .add-option-button, .delete-question-button {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    background-color: #4A148C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover, .add-option-button:hover, .delete-question-button:hover {
+    background-color: #6A1B9A;
+}
+
+.delete-question-button {
+    margin-top: 10px;
+    background-color: #D32F2F;
+    color: white;
+}
+
+.question-container {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.option-container {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.delete-icon {
+    margin-left: 10px;
+    color: #D32F2F;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.delete-icon:hover {
+    color: #F44336;
+}
+
+.quiz-code-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #f3f3f3;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.copy-button:hover {
+    background-color: #f5f3f3;
+}
+
+
+
+/* Style for the share popup */
+.share-popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    z-index: 100;
+    width: 250px;
+    margin-top: 5px;
+}
+
+/* Style for the close icon button */
+.close-popup {
+    padding: 0;
+    margin: 6px;
+    position: absolute;
+    top: 0px;
+    right: 2px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.close-icon {
+    
+    -webkit-tap-highlight-color: transparent;
+    font-size: 20px;
+    color: #555;
+    position: absolute; /* Absolute positioning */
+    top: 0px; /* Adjust this value as needed */
+    right: 2px; /* Adjust this value as needed */
+    cursor: pointer; /* Ensure it's clickable */
+    background: none; /* Remove background */
+    border: none; /* Remove any border if present */
+    outline: none; /* Remove any outline */
+}
+
+
+
+/* Style for share buttons */
+.share-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.share-button:hover {
+    background-color: #45a049;
+}
+
+/* Style for the share icon */
+.share-icon {
+    padding-left:20px ;
+    margin-right: 4%;
+    margin-top: 20%;
+    font-size: 24px;
+    cursor: pointer;
+    color: #4CAF50;
+    margin: 0px;
+    padding-top: 0%;
+}
+
+/* Style for the copy button */
+.copy-button {
+    padding-left:35px ;
+    padding-top: 0px;
+    margin: 0%;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.copy-icon {
+    font-size: 20px;
+    color: #555;
+
+}
+
+
+/* Additional styling for the copied text message */
+.copy-success {
+    color: green;
+    margin-left: 10px;
+}
+

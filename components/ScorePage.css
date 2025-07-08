@@ -1,0 +1,54 @@
+/* ScorePage.css */
+.score-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('https://img.freepik.com/free-vector/red-stage-curtain-theater-opera-scene-drape_107791-1552.jpg?t=st=1731051660~exp=1731055260~hmac=8af1655223a5083429a00695f14e9c1490a82a9c3b869aa90d9e3f38c7d68010&w=740'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; /* General text color */
+    padding: 20px;
+    text-align: center;
+    overflow-y: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.view-leaderboard-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent button background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-leaderboard-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.random-image {
+    max-width: 250px;  /* Adjust the width as needed */
+    max-height: 250px; /* Adjust the height as needed */
+    margin: 20px 0;
+    border-radius: 10px;
+}

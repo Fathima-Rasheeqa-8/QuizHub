@@ -1,0 +1,176 @@
+.leaderboard {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    
+}
+
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.loading {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.top-three {
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* Adjusted gap for better spacing */
+    margin-bottom: 2rem;
+    align-items: flex-end; /* Aligns crowns to bottom */
+}
+
+.top-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.top-user img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.top-user .username {
+    display: block;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.top-user .score {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Positioning and size for the top three */
+.top-user.rank-1 img {
+    width: 120px;
+    height: 120px;
+    border:none;
+}
+
+.top-user.rank-2 img, .top-user.rank-3 img {
+    width: 90px;
+    height: 90px;
+}
+
+.top-user.rank-1 {
+    align-items: center;
+    padding: 8px; 
+    /* Moves the second user slightly left */
+}
+.top-user.rank-2 {
+    margin-right: 20px; 
+    order: -1;/* Moves the second user slightly left */
+}
+
+.top-user.rank-3 {
+    margin-left: 20px; 
+    order: 1;/* Moves the third user slightly right */
+}
+.top-user img:hover {
+    transform: scale(1.1); /* Zoom in on hover */
+    transition: transform 0.3s ease;
+}
+.user-item {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth zoom and shadow transitions */
+}
+/* Hover effect for user item in the other users list */
+.user-item:hover {
+    transform: scale(1.01); /* Slight zoom effect */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.9s ease, box-shadow 0.3s ease;
+}
+
+/* Continuous shaking animation for the crown */
+@keyframes crownShake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.crown {
+    position: absolute;
+    top: -75px; /* Positions the crown above avatar */
+    width: 20px;
+    height: 30px;
+    border: none;
+    animation: crownShake 1.5s infinite ease-in-out;
+}
+
+.top-user.rank-1 .crown {
+    top: -109px; /* Positioned above the avatar */
+    width: 90%; /* Larger crown */
+    height: 90%; /* Larger crown */
+    /* Replace with actual crown image */
+    background-size: cover;
+    animation: crownShake 1.5s infinite ease-in-out;
+}
+
+/* Crown for 2nd place */
+.top-user.rank-2 .crown {
+    top: -80px; /* Slightly lower than the first */
+    width:80%; /* Smaller crown */
+    height: 80%; /* Smaller crown */
+    animation: crownShake 1.5s infinite ease-in-out;
+    background-size: cover;
+}
+
+/* Crown for 3rd place */
+.top-user.rank-3 .crown {
+    top: -80px; /* Slightly lower than the first */
+    width:80%; /* Smaller crown */
+    height: 80%; /* Smaller crown */
+    animation: crownShake 1.5s infinite ease-in-out;
+    background-size: cover;
+}
+/* Styling for the list of other users */
+.other-users {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.user-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.rank {
+    font-weight: bold;
+    font-size: 1.2rem;
+    width: 2rem;
+    text-align: center;
+}
+
+.user-item img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+}
+
+.username {
+    font-size: 1rem;
+    flex: 1;
+}
+
+.score {
+    color: #666;
+    font-size: 0.9rem;
+}
